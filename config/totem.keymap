@@ -97,10 +97,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp Q  &kp W  &kp F             &kp P          &kp B        &kp J        &kp L      &kp U                 &kp Y    &kp SQT
-                      &kp A  &kp R  &kp S             &kp T          &kp G        &kp M        &kp N      &kp E                 &kp I    &kp O
-&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C             &kp D          &kp V        &kp K        &kp H      &kp COMMA             &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                    &kp LEFT_CONTROL  &kp BACKSPACE  &lt 2 TAB    &lt 1 ENTER  &kp SPACE  &mt RIGHT_ALT DELETE
+                      &kp Q  &kp W  &kp F         &kp P          &kp B        &kp J        &kp L      &kp U                 &kp Y    &kp SQT
+                      &kp A  &kp R  &kp S         &kp T          &kp G        &kp M        &kp N      &kp E                 &kp I    &kp O
+&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C         &kp D          &kp V        &kp K        &kp H      &kp COMMA             &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
+                                    &kp LEFT_GUI  &kp BACKSPACE  &lt 2 TAB    &lt 1 ENTER  &kp SPACE  &mt RIGHT_ALT DELETE
             >;
         };
 
@@ -123,10 +123,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp ESC    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp LBRC    &kp RBRC  &kp KP_N7         &kp KP_N8     &kp KP_N9  &kp KP_PLUS
-       &kp LSHFT  &kp KP_N4        &kp KP_N5  &kp KP_N6        &kp LBKT    &kp RBKT  &kp LEFT_ARROW    &kp UP_ARROW  &kp DOWN   &kp RIGHT_ARROW
-&none  &kp DEL    &kp KP_N1        &kp KP_N2  &kp KP_NUMBER_3  &kp LPAR    &kp RPAR  &kp LC(LA(LEFT))  &kp KP_N2     &kp KP_N3  &kp LC(LA(RIGHT_ARROW))  &none
-                                   &none      &kp NUMBER_0     &none       &trans    &kp KP_N0         &none
+                &kp MINUS  &kp KP_NUMBER_7  &kp KP_N8     &kp KP_N9        &kp PLUS        &kp TAB         &kp HOME          &kp PAGE_UP           &kp PAGE_DOWN          &kp END
+                &kp N0     &kp KP_N4        &kp KP_N5     &kp KP_N6        &kp PERIOD      &kp LANGUAGE_4  &kp LEFT_ARROW    &kp UP_ARROW          &kp DOWN               &kp RIGHT_ARROW
+&kp LEFT_SHIFT  &kp ASTRK  &kp KP_N1        &kp KP_N2     &kp KP_NUMBER_3  &kp SLASH       &kp LANGUAGE_8  &kp LA(LG(LEFT))  &kp LG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp LA(LG(RIGHT_ARROW))  &kp RIGHT_SHIFT
+                                            &kp LEFT_GUI  &kp BACKSPACE    &kp LEFT_ALT    &trans          &none             &none
             >;
         };
 
@@ -149,19 +149,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &none  &none  &none
-       &none     &none   &none     &none     &none        &none      &none     &none  &none  &none
-&none  &none     &none   &none     &none     &none        &none      &none     &none  &none  &none  &none
-                         &none     &none     &trans       &none      &none     &none
+       &kp MINUS  &kp EXCL    &kp AT                &kp HASH               &kp PRCNT        &none  &kp LEFT_BRACKET  &none  &kp RIGHT_BRACKET  &none
+       &kp CARET  &kp DOLLAR  &kp PERCENT           &kp CARET              &kp LS(MINUS)    &none  &kp LBRC          &none  &kp RIGHT_BRACE    &none
+&none  &kp ASTRK  &kp SQT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH        &none  &kp LESS_THAN     &none  &kp GT             &none  &none
+                              &none                 &none                  &trans           &none  &none             &none
             >;
         };
 
-        layer_3 {
+        fun-layer {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp F11  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp F10  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
