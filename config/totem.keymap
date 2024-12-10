@@ -123,10 +123,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp MINUS  &kp KP_NUMBER_7  &kp KP_N8     &kp KP_N9        &kp PLUS        &kp TAB         &kp HOME          &kp PAGE_UP           &kp PAGE_DOWN          &kp END
-                &kp N0     &kp KP_N4        &kp KP_N5     &kp KP_N6        &kp PERIOD      &kp LANGUAGE_4  &kp LEFT_ARROW    &kp UP_ARROW          &kp DOWN               &kp RIGHT_ARROW
-&kp LEFT_SHIFT  &kp ASTRK  &kp KP_N1        &kp KP_N2     &kp KP_NUMBER_3  &kp SLASH       &kp LANGUAGE_8  &kp LA(LG(LEFT))  &kp LG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp LA(LG(RIGHT_ARROW))  &kp RIGHT_SHIFT
-                                            &kp LEFT_GUI  &kp BACKSPACE    &kp LEFT_ALT    &trans          &none             &none
+                &kp MINUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS        &kp TAB         &kp HOME          &kp PAGE_UP           &kp PAGE_DOWN          &kp END
+                &kp SEMICOLON  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD      &kp LANGUAGE_4  &kp LEFT_ARROW    &kp UP_ARROW          &kp DOWN               &kp RIGHT_ARROW
+&kp LEFT_SHIFT  &kp ASTRK      &kp N7        &kp N8        &kp N9        &kp SLASH       &kp LANGUAGE_8  &kp LA(LG(LEFT))  &kp LG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp LA(LG(RIGHT_ARROW))  &kp RIGHT_SHIFT
+                                             &kp LEFT_GUI  &kp N0        &kp LEFT_ALT    &trans          &none             &none
             >;
         };
 
@@ -149,19 +149,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp MINUS  &kp EXCL    &kp AT                &kp HASH               &kp PRCNT        &none  &kp LEFT_BRACKET  &none  &kp RIGHT_BRACKET  &none
-       &kp CARET  &kp DOLLAR  &kp PERCENT           &kp CARET              &kp LS(MINUS)    &none  &kp LBRC          &none  &kp RIGHT_BRACE    &none
-&none  &kp ASTRK  &kp SQT     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH        &none  &kp LESS_THAN     &none  &kp GT             &none  &none
-                              &none                 &none                  &trans           &none  &none             &none
+                      &kp MINUS      &kp EXCL       &kp AT                &kp HASH   &kp PLUS      &kp TAB           &kp LEFT_ARROW         &kp UP_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
+                      &kp SEMICOLON  &kp DOLLAR     &kp PERCENT           &kp CARET  &kp PERIOD    &kp LESS_THAN     &kp LPAR               &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp SINGLE_QUOTE
+&mt LEFT_SHIFT GRAVE  &kp ASTRK      &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RPAR   &kp SLASH     &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RBKT          &kp RBRC        &kp SLASH         &mt RIGHT_SHIFT BACKSLASH
+                                                    &none                 &none      &trans        &lt 3 ENTER       &kp SPACE              &kp BACKSPACE
             >;
         };
 
         fun-layer {
             bindings = <
-        &kp F11  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans
-        &kp F10  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+                &kp F11  &kp F1  &kp F2  &kp F3  &none    &none  &none  &none  &none  &none
+                &kp F10  &kp F4  &kp F5  &kp F6  &none    &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp F12  &kp F7  &kp F8  &kp F9  &none    &none  &none  &none  &none  &none  &kp RIGHT_SHIFT
+                                 &none   &none   &none    &none  &none  &none
             >;
         };
 
